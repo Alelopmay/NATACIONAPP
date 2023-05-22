@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Cylinder?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="693.0" prefWidth="936.0" style="-fx-background-color: #0088a3;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controlador.MainControler">
+    <children>
+      <ImageView fitHeight="600.0" fitWidth="1176.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../fotos/piscina.jpg" />
+         </image>
+      </ImageView>
+        <Accordion />
+      <ImageView fitHeight="699.0" fitWidth="140.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+
+         </image>
+      </ImageView>
+        <Pane layoutX="165.0" layoutY="153.0" prefHeight="387.0" prefWidth="576.0" style="-fx-background-color: #0088a3;">
+            <children>
+                <TextField fx:id="usuario" layoutX="319.0" layoutY="119.0" onAction="#ControladorP" prefHeight="27.0" prefWidth="148.0" style="-fx-background-color: white;" />
+                <PasswordField fx:id="pasword" layoutX="319.0" layoutY="206.0" onAction="#ControladorP" prefHeight="27.0" prefWidth="148.0" style="-fx-background-color: white;" />
+                <Button fx:id="btn_home" contentDisplay="TOP" layoutX="232.0" layoutY="266.0" mnemonicParsing="false" onAction="#ControladorP" prefHeight="36.0" prefWidth="123.0" text="iniciar">
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+                <Label alignment="CENTER" layoutX="126.0" layoutY="108.0" prefHeight="51.0" prefWidth="140.0" text="Usuario" textFill="WHITE">
+                    <font>
+                        <Font size="35.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="115.0" layoutY="194.0" prefHeight="51.0" prefWidth="163.0" text="Contraseña" textFill="WHITE">
+                    <font>
+                        <Font size="29.0" />
+                    </font>
+                </Label>
+                <Line endX="-13.07891845703125" endY="72.39999389648438" layoutX="74.0" layoutY="269.0" startX="-13.07891845703125" startY="-232.39999389648438" />
+                <Line endX="335.986328125" endY="-1.107086181640625" layoutX="185.0" layoutY="36.0" startX="-123.57891845703125" startY="0.100006103515625" />
+                <Line endX="367.60052490234375" endY="-0.79290771484375" layoutX="158.0" layoutY="342.0" startX="-97.57891845703125" startY="-0.0999755859375" />
+                <Line endX="-42.30657958984375" endY="-360.3999938964844" layoutX="564.0" layoutY="396.0" startX="-39.1065673828125" startY="-55.500030517578125" />
+                <Cylinder height="100" layoutX="521.0" layoutY="188.0" radius="20" />
+                <Cylinder height="100" layoutX="61.0" layoutY="183.0" radius="20" />
+                <Label layoutX="111.0" layoutY="174.0" prefHeight="17.0" prefWidth="310.0" textFill="#fc0000" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

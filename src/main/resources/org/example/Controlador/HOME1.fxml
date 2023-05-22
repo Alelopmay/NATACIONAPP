@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="693.0" prefWidth="936.0" style="-fx-min-width: 100%; -fx-min-height: 100%; -fx-background-color: #212F3C;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controlador.MainControler">
+    <children>
+        <Polyline fill="#00ff3c" layoutX="809.0" layoutY="34.0" points="-50.0, -40.0, 127.0, -34.0, 127.0, 268.0, -817.1763916015625, -34.0" strokeType="INSIDE" />
+        <Polygon fill="#00ff3c" layoutX="172.0" layoutY="557.0" points="-172.00001525878906, 136.0, 764.0, 136.0, -172.0, -219.0" stroke="BLACK" strokeType="INSIDE" />
+        <Pane layoutX="168.0" layoutY="104.0" prefHeight="470.0" prefWidth="561.0" style="-fx-background-color: #5DADE2;">
+            <children>
+                <Label alignment="CENTER" layoutX="118.0" layoutY="40.0" prefHeight="52.0" prefWidth="325.0" style="-fx-background-color: #FFFFFF;" text="Selecciona la opción que deseas:" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                    <font>
+                        <Font name="Candara Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Polygon fill="#090379" layoutX="47.0" layoutY="430.0" points="-50.0, 40.0, 50.0, 40.0, -47.00001525878906, -73.60000610351562" stroke="BLACK" strokeType="INSIDE" />
+                <Polygon fill="#090379" layoutX="509.0" layoutY="429.0" points="-50.0, 40.0, 52.4000244140625, 40.60003662109375, 52.0, -71.0" stroke="BLACK" strokeType="INSIDE" />
+                <Button fx:id="boton3" layoutX="145.0" layoutY="323.0" mnemonicParsing="false" onAction="#buttonOption3" prefHeight="52.0" prefWidth="272.0" text="Administrar Marcas">
+                    <font>
+                        <Font size="21.0" />
+                    </font>
+                </Button>
+            <ImageView fitHeight="92.0" fitWidth="100.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../fotos/icono.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Button1" layoutX="145.0" layoutY="149.0" mnemonicParsing="false" onAction="#buttonOption1" prefHeight="52.0" prefWidth="272.0" text="Administrar Nadadores">
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+            <Button fx:id="Button2" layoutX="145.0" layoutY="235.0" mnemonicParsing="false" onAction="#buttonOption2" prefHeight="52.0" prefWidth="272.0" text="Administrar Pruebas">
+               <font>
+                  <Font size="22.0" />
+               </font></Button>
+            <Button fx:id="Buttonexit" layoutX="227.0" layoutY="405.0" mnemonicParsing="false" onAction="#buttonOptionExit" prefHeight="34.0" prefWidth="109.0" text="volver atras" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

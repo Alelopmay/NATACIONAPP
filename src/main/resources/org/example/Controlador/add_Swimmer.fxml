@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="693.0" prefWidth="936.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controlador.ControllerAddSwimmer">
+   <children>
+      <ImageView fitHeight="761.0" fitWidth="1087.0" layoutX="-142.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../fotos/piscina.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0b569c" height="27.0" stroke="BLACK" strokeType="INSIDE" width="941.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="27.0" layoutY="691.0" stroke="BLACK" strokeType="INSIDE" width="942.0" />
+      <Cylinder height="100" layoutX="20.0" layoutY="641.0" radius="20" />
+      <Cylinder height="100" layoutX="921.0" layoutY="641.0" radius="20" />
+      <Pane layoutX="101.0" layoutY="27.0" prefHeight="582.0" prefWidth="740.0" style="-fx-background-color: #404040;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6d1dc" height="582.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6d1dc" height="13.0" layoutX="10.0" stroke="BLACK" strokeType="INSIDE" width="722.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6d1dc" height="582.0" layoutX="730.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6d1dc" height="13.0" layoutX="9.0" layoutY="568.0" stroke="BLACK" strokeType="INSIDE" width="722.0" />
+            <TextField fx:id="TextName" layoutX="428.0" layoutY="126.0" prefHeight="27.0" prefWidth="174.0" />
+            <Label layoutX="88.0" layoutY="126.0" prefHeight="27.0" prefWidth="300.0" text="Introduce nombre del nadador:" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="204.0" prefHeight="27.0" prefWidth="311.0" text="Introduce apellido del nadador:" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TextLast_Name" layoutX="428.0" layoutY="204.0" prefHeight="27.0" prefWidth="174.0" />
+            <Label layoutX="88.0" layoutY="278.0" prefHeight="27.0" prefWidth="300.0" text="Introduce edad del nadador:" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="intAge" layoutX="428.0" layoutY="281.0" prefHeight="27.0" prefWidth="174.0" />
+            <Button fx:id="ButtonAddSwimmer" layoutX="296.0" layoutY="432.0" mnemonicParsing="false" onAction="#ButtonAddSwimmer" prefHeight="27.0" prefWidth="149.0" text="Introducir Nadador" />
+            <Line endX="438.39996337890625" layoutX="194.0" layoutY="88.0" startX="-112.00003051757812" />
+            <Line endX="246.39996337890625" endY="-3.89996337890625" layoutX="388.0" layoutY="477.0" startX="-305.4000244140625" startY="-3.89996337890625" />
+            <Line endX="-47.9000244140625" endY="294.6000061035156" layoutX="130.0" layoutY="178.0" startX="-48.500030517578125" startY="-89.5" />
+            <Line endX="2.89996337890625" endY="300.6000061035156" layoutX="632.0" layoutY="172.0" startX="0.89996337890625" startY="-83.5" />
+            <Line endX="451.19293212890625" layoutX="181.0" layoutY="169.0" startX="-100.0" />
+            <Line endX="451.39996337890625" layoutX="180.0" layoutY="248.0" startX="-100.0" />
+            <Line endX="448.39996337890625" endY="-3.0517578125E-5" layoutX="182.0" layoutY="335.0" startX="-100.0" />
+            <Button fx:id="exitSwimmer" layoutX="25.0" layoutY="504.0" mnemonicParsing="false" onAction="#ButtonExit" prefHeight="54.0" prefWidth="138.0" text="volver atras" />
+            <ImageView fitHeight="66.0" fitWidth="97.0" layoutX="322.0" layoutY="14.0">
+               <image>
+                  <Image url="@../fotos/nadador.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="93.0" layoutY="361.0" prefHeight="27.0" prefWidth="290.0" text="Selecciona el sexo del nadador:" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="21.0" />
+               </font>
+            </Label>
+            <Line endX="448.39996337890625" endY="-3.0517578125E-5" layoutX="184.0" layoutY="408.0" startX="-101.79293823242188" startY="-3.0517578125E-5" />
+            <ChoiceBox fx:id="choiceBoxSexo" layoutX="431.0" layoutY="362.0" prefHeight="25.0" prefWidth="174.0" />
+         </children>
+      </Pane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#286ba9" height="13.0" layoutX="100.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" width="740.0" />
+      <Polygon layoutX="50.0" layoutY="85.0" points="-50.000003814697266, -85.0, -50.000003814697266, -58.0, 46.799964904785156, -58.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polyline fill="BLACK" layoutX="860.0" layoutY="39.0" points="-20.0, -10.000001907348633, 85.00006103515625, -41.0, 81.00006103515625, -10.000001907348633, 85.00006103515625, -10.000001907348633" strokeType="INSIDE" />
+   </children>
+</AnchorPane>

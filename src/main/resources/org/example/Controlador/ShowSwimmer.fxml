@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="693.0" prefWidth="936.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controlador.ControllerShowSwimmer">
+    <children>
+      <ImageView fitHeight="469.0" fitWidth="902.0" layoutX="20.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../fotos/agua.jpg" />
+         </image></ImageView>
+      <ImageView fitHeight="474.0" fitWidth="944.0" layoutX="1.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../fotos/agua.jpg" />
+         </image>
+      </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="704.0" stroke="BLACK" strokeType="INSIDE" width="22.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="1.0" layoutX="22.0" stroke="BLACK" strokeType="INSIDE" width="900.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="704.0" layoutX="922.0" stroke="BLACK" strokeType="INSIDE" width="22.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="19.0" layoutX="22.0" layoutY="685.0" stroke="BLACK" strokeType="INSIDE" width="900.0" />
+        <Pane layoutX="128.0" layoutY="51.0" prefHeight="523.0" prefWidth="676.0" style="-fx-background-color: #404040;">
+            <children>
+                <Line endX="-128.0" endY="360.0" layoutX="146.0" layoutY="146.0" startX="-129.00001525878906" startY="-131.0" />
+                <Line endX="67.0" endY="133.0" layoutX="594.0" layoutY="373.0" startX="68.0999755859375" startY="-361.6000061035156" />
+                <Line endX="479.0" endY="-1.52587890625E-5" layoutX="181.0" layoutY="14.0" startX="-162.60000610351562" startY="-7.62939453125E-6" />
+                <Line endX="512.5999755859375" endY="6.103515625E-5" layoutX="148.0" layoutY="506.0" startX="-130.0" />
+                <ImageView fitHeight="91.0" fitWidth="126.0" layoutX="286.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+
+                    </image>
+                </ImageView>
+                <TableView fx:id="swimmerTableView" layoutX="18.0" layoutY="14.0" prefHeight="492.0" prefWidth="643.0" style="-fx-background-color: white;">
+                    <columns>
+                        <TableColumn fx:id="CodColumn" prefWidth="95.20001220703125" text="Cod_Nadador" />
+                        <TableColumn fx:id="nameColumn" prefWidth="89.5999755859375" text="Nombre" />
+                        <TableColumn fx:id="lastnameColumn" prefWidth="109.59991455078125" text="Apellido" />
+                        <TableColumn fx:id="ageColumn" prefWidth="94.39996337890625" text="Edad" />
+                        <TableColumn fx:id="categoryColumn" prefWidth="119.20001220703125" text="Categoria" />
+                  <TableColumn fx:id="sexColumn" prefWidth="138.39996337890625" text="Sexo" />
+                    </columns>
+                </TableView>
+
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="19.0" layoutX="-6.0" layoutY="514.0" stroke="BLACK" strokeType="INSIDE" width="689.0" />
+            </children>
+        </Pane>
+      <Button fx:id="ButtonExit" layoutX="31.0" layoutY="622.0" mnemonicParsing="false" onAction="#ButtonExit" prefHeight="50.0" prefWidth="193.0" text="volver atras" />
+      <Button fx:id="buttonModifySwimmer" layoutX="782.0" layoutY="628.0" mnemonicParsing="false" onAction="#ButtonModify" prefHeight="43.0" prefWidth="116.0" text="modificar" />
+      <Label layoutX="366.0" layoutY="14.0" prefHeight="31.0" prefWidth="377.0" text="BUSCADOR POR EL NOMBRE O EL COD:">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchField" layoutX="748.0" layoutY="17.0" onAction="#searchSwimmer" onKeyReleased="#searchSwimmer" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="693.0" prefWidth="936.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controlador.ControllerShowMark">
+    <children>
+        <ImageView fitHeight="469.0" fitWidth="902.0" layoutX="20.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../fotos/agua.jpg" />
+            </image></ImageView>
+        <ImageView fitHeight="474.0" fitWidth="944.0" layoutX="1.0" layoutY="211.0" onDragDetected="#ButtonExit" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../fotos/agua.jpg" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="704.0" stroke="BLACK" strokeType="INSIDE" width="22.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="1.0" layoutX="22.0" stroke="BLACK" strokeType="INSIDE" width="900.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="704.0" layoutX="922.0" stroke="BLACK" strokeType="INSIDE" width="22.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="19.0" layoutX="22.0" layoutY="685.0" stroke="BLACK" strokeType="INSIDE" width="900.0" />
+        <Pane layoutX="23.0" layoutY="93.0" prefHeight="502.0" prefWidth="408.0" style="-fx-background-color: #404040;">
+            <children>
+                <ImageView fitHeight="91.0" fitWidth="126.0" layoutX="286.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+
+                    </image>
+                </ImageView>
+                <TableView fx:id="MarkSwimmerTableview" layoutX="6.0" layoutY="24.0" prefHeight="472.0" prefWidth="397.0" style="-fx-background-color: white;">
+                    <columns>
+                        <TableColumn fx:id="NameColumn" prefWidth="168.00003051757812" text="Nombre" />
+                        <TableColumn fx:id="CodColumn" prefWidth="147.19998168945312" text="Prueba" />
+                        <TableColumn fx:id="TimeColumn" text="Tiempo" />
+                        <TableColumn fx:id="DateColumn" prefWidth="100.0" text="Fecha" />
+                    </columns>
+                </TableView>
+            </children>
+        </Pane>
+        <Button fx:id="buttonExit" layoutX="31.0" layoutY="622.0" mnemonicParsing="false" onAction="#ButtonExit" prefHeight="50.0" prefWidth="126.0" text="volver " />
+      <Pane layoutX="566.0" layoutY="46.0" prefHeight="128.0" prefWidth="329.0" style="-fx-background-color: #252222;">
+         <children>
+            <TextField fx:id="IntId" layoutX="253.0" layoutY="64.0" prefHeight="26.0" prefWidth="58.0" />
+            <TextField fx:id="IntCod" layoutX="253.0" layoutY="27.0" prefHeight="26.0" prefWidth="58.0" />
+            <Button fx:id="buttonShow" layoutX="127.0" layoutY="90.0" mnemonicParsing="false" onAction="#ButonShow" text="buscar" />
+            <Label layoutX="14.0" layoutY="22.0" prefHeight="30.0" prefWidth="226.0" text="Introduce Cod_del Nadador:" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="68.0" prefHeight="18.0" prefWidth="214.0" text="Introduce el Id de la Prueba:" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="440.0" layoutY="189.0" prefHeight="408.0" prefWidth="481.0" style="-fx-background-color: #404040;">
+         <children>
+            <LineChart fx:id="lineChart" layoutX="-5.0" layoutY="4.0" prefHeight="408.0" prefWidth="496.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+         </children></Pane>
+    </children>
+</AnchorPane>

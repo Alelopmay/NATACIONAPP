@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Cylinder?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="693.0" prefWidth="936.0" style="-fx-background-color: #0D90D2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controlador.ControllerDeleteSwimmer">
+<children>
+      <ImageView fitHeight="734.0" fitWidth="1073.0" layoutX="-146.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../fotos/piscina.jpg" />
+         </image>
+      </ImageView>
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="704.0" stroke="BLACK" strokeType="INSIDE" width="22.0" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="19.0" layoutX="22.0" stroke="BLACK" strokeType="INSIDE" width="900.0" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="704.0" layoutX="922.0" stroke="BLACK" strokeType="INSIDE" width="22.0" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="19.0" layoutX="22.0" layoutY="685.0" stroke="BLACK" strokeType="INSIDE" width="900.0" />
+   <Cylinder height="100" layoutX="42.0" layoutY="636.0" radius="20" />
+   <Cylinder height="100" layoutX="902.0" layoutY="636.0" radius="20" />
+   <Cylinder height="100" layoutX="42.0" layoutY="69.0" radius="20" />
+   <Cylinder height="100" layoutX="902.0" layoutY="69.0" radius="20" />
+   <Pane layoutX="128.0" layoutY="94.0" prefHeight="516.0" prefWidth="676.0" style="-fx-background-color: #404040;">
+      <children>
+         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="516.0" stroke="BLACK" strokeType="INSIDE" width="15.0" />
+         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="19.0" layoutX="14.0" stroke="BLACK" strokeType="INSIDE" width="661.0" />
+         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="19.0" layoutX="14.0" layoutY="498.0" stroke="BLACK" strokeType="INSIDE" width="661.0" />
+         <Cylinder height="100" layoutX="35.0" layoutY="69.0" radius="20" />
+         <Cylinder height="100" layoutX="35.0" layoutY="448.0" radius="20" />
+         <Cylinder height="100" layoutX="655.0" layoutY="69.0" radius="20" />
+         <Cylinder height="100" layoutX="655.0" layoutY="448.0" radius="20" />
+         <Line endX="-129.00001525878906" endY="147.99996948242188" layoutX="184.0" layoutY="250.0" startX="-129.00001525878906" startY="-131.0" />
+         <Line endX="68.00006103515625" endY="168.99996948242188" layoutX="567.0" layoutY="232.0" startX="68.00006103515625" startY="-110.0" />
+         <Line endX="479.0" endY="-1.52587890625E-5" layoutX="156.0" layoutY="119.0" startX="-100.0" />
+         <Line endX="478.0" endY="3.0517578125E-5" layoutX="157.0" layoutY="398.0" startX="-100.0" />
+         <Button fx:id="ButtonExit" layoutX="69.0" layoutY="441.0" mnemonicParsing="false" onAction="#ButtonExit" prefHeight="39.0" prefWidth="144.0" text="volver atras" />
+         <TextField fx:id="IntCod_Swimmer" layoutX="562.0" layoutY="221.0" onAction="#ButtonDeleteSwimmer" prefHeight="25.0" prefWidth="58.0" />
+         <ImageView fitHeight="91.0" fitWidth="126.0" layoutX="286.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+
+            </image>
+         </ImageView>
+         <Label alignment="CENTER" layoutX="60.0" layoutY="214.0" prefHeight="39.0" prefWidth="504.0" text="Introduce Cod del Nadador a eliminar:" textFill="WHITE">
+            <font>
+               <Font name="Berlin Sans FB Demi Bold" size="27.0" />
+            </font>
+         </Label>
+         <Button fx:id="ButtonDeleteSwimmer" layoutX="317.0" layoutY="352.0" mnemonicParsing="false" onAction="#ButtonDeleteSwimmer" text="eliminar" />
+      </children>
+   </Pane>
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="516.0" layoutX="804.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="15.0" />
+</children>
+</AnchorPane>

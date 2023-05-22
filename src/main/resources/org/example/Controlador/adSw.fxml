@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Cylinder?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="693.0" prefWidth="936.0" style="-fx-background-color: #F0FFFD;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controlador.ControllerOptionS">
+   <children>
+      <Pane layoutX="51.0" layoutY="149.0" prefHeight="408.0" prefWidth="849.0" style="-fx-background-color: #191E1A;">
+         <children>
+            <Cylinder height="100" layoutX="20.0" layoutY="50.0" radius="20" />
+            <Cylinder height="100" layoutX="20.0" layoutY="358.0" radius="20" />
+            <Cylinder height="100" layoutX="830.0" layoutY="50.0" radius="20" />
+            <Cylinder height="100" layoutX="830.0" layoutY="358.0" radius="20" />
+            <Button fx:id="ButtonAdd" layoutX="260.0" layoutY="100.0" mnemonicParsing="false" onAction="#ButtonAdd" prefHeight="38.0" prefWidth="295.0" text="Crear Nadador">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="ButtonDelete" layoutX="260.0" layoutY="156.0" mnemonicParsing="false" onAction="#ButtonDelete" prefHeight="38.0" prefWidth="295.0" text="Eliminar Nadador">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="Buttonmodify_Swimmer" layoutX="260.0" layoutY="207.0" mnemonicParsing="false" onAction="#Buttonmodify" prefHeight="38.0" prefWidth="295.0" text="Modificar Nadador">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="ButtonShow" layoutX="260.0" layoutY="258.0" mnemonicParsing="false" onAction="#ButtonShow" prefHeight="38.0" prefWidth="295.0" text="Ver Datos Nadador">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="ButtonExit" layoutX="360.0" layoutY="320.0" mnemonicParsing="false" onAction="#ButtonExit" prefHeight="38.0" prefWidth="100.0" text="Volver atras" />
+            <Label alignment="CENTER" layoutX="166.0" layoutY="18.0" prefHeight="64.0" prefWidth="488.0" text="Clica en la opcion que Deseas:" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="32.0" />
+               </font>
+            </Label>
+            <Line endX="341.0" layoutX="288.0" layoutY="66.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="58.99998474121094" endY="235.0" layoutX="86.0" layoutY="152.0" startX="58.99998474121094" startY="-124.20001220703125" />
+            <Line endX="424.80712890625" endY="-2.2999267578125" layoutX="247.0" layoutY="387.0" startX="-100.0" />
+            <Line endX="427.79998779296875" endY="0.29998779296875" layoutX="242.0" layoutY="27.0" startX="-96.50001525878906" startY="0.29998779296875" />
+            <Line endX="-63.69287109375" endY="166.20001220703125" layoutX="736.0" layoutY="218.0" startX="-63.69287109375" startY="-187.99290466308594" />
+         </children>
+      </Pane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="44.0" layoutY="661.0" stroke="BLACK" strokeType="INSIDE" width="895.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0084ff" height="44.0" stroke="BLACK" strokeType="INSIDE" width="895.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="706.0" layoutX="-6.0" stroke="BLACK" strokeType="INSIDE" width="52.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="706.0" layoutX="893.0" stroke="BLACK" strokeType="INSIDE" width="43.0" />
+      <ImageView fitHeight="100.0" fitWidth="158.0" layoutX="412.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../fotos/nadador.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
